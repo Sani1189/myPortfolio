@@ -376,5 +376,175 @@ header {
   padding: 15px;
   border-left: 2px solid #269a8c;
 }
+/* Additional CSS for Services Section */
+
+/* Card container styling (using Flexbox to make all cards the same height) */
+.row-cols-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+/* Card styling */
+.card {
+  width: 100%; /* Adjust the width of the cards */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Card image */
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 80px; /* Adjust the size of the card images */
+  margin: 0 auto; /* Center the logos */
+  display: block;
+  padding: 5px;
+}
+
+/* Card title */
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Card text */
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Card background color and text color */
+.card {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .row-cols-1 {
+    flex-direction: column;
+  }
+}
+
+/* Add CSS styles for the "Projects & Research" section here */
+#projects-research {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+}
+
+#projects-research h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Extra-Curricular Activities Section */
+#extra-curricular {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.activities-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activities-list li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.activities-list li:before {
+  content: "\2022";
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Contact Me Section */
+#contact {
+  background-color: #f2f2f2;
+  padding: 60px 0;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
 
 
