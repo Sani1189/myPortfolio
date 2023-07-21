@@ -1,0 +1,380 @@
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  height: 50px; 
+  background-color: #ffffff; 
+  z-index: 999;
+}
+.navbar-slide-in {
+  background-color: #74f4ef; 
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+.navbar-brand img {
+  max-height: 40px; 
+}
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #df0d0d; 
+  text-decoration: none;
+  font: 1em sans-serif;
+  padding: 10px 15px;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.nav-link:hover,
+.nav-link.active-link {
+  border-bottom: 2px solid #df0d0d;
+  font-weight: 500;
+  transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+}
+
+.dropdown-menu {
+  background-color: #007bff; 
+}
+
+.dropdown-item {
+  color: #ffffff; 
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #0056b3; 
+}
+
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; 
+}
+
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    margin-left: 50px;
+  }
+  header {
+    height: auto;
+  }
+  .navbar-nav {
+    justify-content: center;
+    height: auto;
+  }
+
+  .nav-link {
+    margin: 5px;
+  }
+
+  .collapse.navbar-collapse {
+    background-color: #007bff; 
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .collapse.navbar-collapse a {
+    color: #ffffff; 
+  }
+
+  .collapse.navbar-collapse .dropdown-item {
+    color: #ffffff; 
+  }
+}
+#home {
+  margin-top: 60px;
+  background: linear-gradient(90deg, #331147, #1c0606, #481313, #231b59, #310d31,rgb(21, 6, 16));
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease-in-out forwards infinite;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; 
+  }
+  50% {
+    background-position: 50% 50%; 
+  }
+  100% {
+    background-position: 100% 50%; 
+  }
+}
+#home .profile-photo {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: alternateAnimation 2s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes alternateAnimation {
+  0% {
+    transform: translateZ(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.mytxt{
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+ 
+  #home .row {
+    flex-direction: row;
+  }
+  #home .profile-photo {
+    float: left;
+    margin-left: 30px;
+    animation: alternateAnimation 2s ease-in-out forwards;
+    opacity: 0;
+  }
+  @keyframes alternateAnimation {
+    0% {
+      transform: translateZ(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+    
+  
+  .mytxt{
+    text-align: start;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+  }
+}
+
+.text-transition h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-transition h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fefefe;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.text-transition p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.text-transition.mytxt h1 {
+  animation: textAnimation 2s linear;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes textAnimation {
+  0% {
+    width: 0;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.text-transition.mytxt h2 {
+  animation: textAnimation 2s linear 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.text-transition.mytxt p {
+  animation: pAnimation 2s linear 4s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes pAnimation {
+  0% {
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#about {
+  padding: 60px 0;
+  background-color: #f9f9f9; 
+}
+#skills{
+  padding: 60px 0;
+  background-color: #f9f9f9; 
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #333333; 
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#skills h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #333333; 
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#about hr {
+  width: 80px;
+  height: 3px;
+  background-color: #007bff; 
+  margin: 0 auto 20px;
+}
+#skills hr {
+  width: 80px;
+  height: 3px;
+  background-color: #007bff; 
+  margin: 0 auto 20px;
+}
+#about h3 {
+  font-size: 26px;
+  color: #007bff; 
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#skills h3 {
+  font-size: 26px;
+  color: #007bff; 
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-size: 20px;
+  color: #333333; 
+  line-height: 1.6;
+}
+#skills p {
+  font-size: 16px;
+  color: #333333; 
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  #about h2 {
+    font-size: 30px;
+  }
+  #about .details{
+    text-align: center;
+  }
+  
+  #about h3 {
+    font-size: 25px;
+  }
+  #skills h2 {
+    font-size: 30px;
+  }
+  #skills h3 {
+    font-size: 25px;
+  }
+  .education{
+    background-color: rgb(125, 75, 210);
+  }
+  .education .edu-level{
+    color: white!important;
+  }
+  .education .edu-level strong{
+    color: white!important;
+  }
+  .mydiv{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .mydiv .progress{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .mydiv .subdiv{
+    background-color: rgb(125, 75, 210);
+    padding: 10px!important;
+  }
+  .mydiv .subdiv strong{
+    color: white!important;
+  }
+}
+
+.mydiv .other{
+  text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#about ul,#skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+#about li,#skills li {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+#about strong,#skills strong {
+  color: #000000; 
+  font-weight: 600;
+}
+.progress{
+  margin-bottom: 20px;
+  width: 70%;
+}
+.education {
+  list-style: none;
+  padding: 0;
+}
+
+.edu-level {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-left: 2px solid #269a8c;
+}
+
+
