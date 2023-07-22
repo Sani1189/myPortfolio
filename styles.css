@@ -379,7 +379,6 @@ a.nav-link{
   padding: 15px;
   border-left: 2px solid #269a8c;
 }
-/* Additional CSS for Services Section */
 #services {
   background: rgb(82, 63, 99);
 
@@ -392,7 +391,7 @@ a.nav-link{
   margin-bottom: 30px;
 }
 
-/* Card container styling (using Flexbox to make all cards the same height) */
+
 .row-cols-1 {
   display: flex;
   flex-wrap: wrap;
@@ -403,9 +402,9 @@ a.nav-link{
   margin-bottom: 15px;
 }
 
-/* Card styling */
+
 .card {
-  width: 100%; /* Adjust the width of the cards */
+  width: 100%;
   background-color: #f9ffff!important;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -417,17 +416,16 @@ a.nav-link{
   transform: translateY(-5px);
 }
 
-/* Card image */
+
 .card-img-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  max-width: 80px; /* Adjust the size of the card images */
-  margin: 0 auto; /* Center the logos */
+  max-width: 80px; 
+  margin: 0 auto; 
   display: block;
   padding: 5px;
 }
 
-/* Card title */
 .card-title {
   font-size: 16px;
   font-weight: bold;
@@ -435,26 +433,25 @@ a.nav-link{
   margin-bottom: 10px;
 }
 
-/* Card text */
 .card-text {
   font-size: 14px;
   color: #666;
 }
 
-/* Card background color and text color */
+
 .card {
   background-color: #f9f9f9;
   color: #333;
 }
 
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
   .row-cols-1 {
     flex-direction: column;
   }
 }
 
-/* Add CSS styles for the "Projects & Research" section here */
+
 #projects-research {
   background-color: #f0faff;
   padding: 50px 0;
@@ -516,14 +513,13 @@ a.nav-link{
   margin-bottom: 10px;
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
   .activities-list {
     font-size: 16px;
   }
 }
 
-/* Add this CSS to style the contact section */
 
 #contact {
   padding: 40px 0;
@@ -565,7 +561,7 @@ a.nav-link{
 
 .btn-submit {
   display: block;
-  margin: 0 auto; /* Center the button horizontally */
+  margin: 0 auto;
   background-color: #4caf50;
   color: #ffffff;
   border: none;
@@ -617,7 +613,6 @@ a.nav-link{
   }
 }
 
-/* Experience Section */
 #experience {
   background-color: #eeeeee;
   padding: 60px 0;
@@ -668,7 +663,7 @@ a.nav-link{
   color: #444;
   line-height: 1.6;
 }
-/* Hobbies Section */
+
 #hobbies {
   background-color: #280a5c;
   padding: 60px 0;
