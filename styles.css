@@ -199,7 +199,7 @@ a.nav-link{
 }
 
 .text-transition.mytxt h1 {
-  animation: textAnimation 2s linear;
+  animation: textAnimation 1s linear;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -217,13 +217,13 @@ a.nav-link{
   }
 }
 .text-transition.mytxt h2 {
-  animation: textAnimation 2s linear 2s;
+  animation: textAnimation 1s linear 1s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
 .text-transition.mytxt p {
-  animation: pAnimation 2s linear 4s;
+  animation: pAnimation 1.5s linear 2s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -242,8 +242,21 @@ a.nav-link{
 
 #about {
   padding: 60px 0;
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
+  opacity: 0;
+  animation: aboutAnimation 0.5s ease-in-out 0.2s forwards;
 }
+@keyframes aboutAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #skills{
   padding: 60px 0;
   background-color: #f9f9f9; 
@@ -727,7 +740,7 @@ a.nav-link{
 .animate-element {
   opacity: 0;
   transform: translateY(50px);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .animate-element.visible {
