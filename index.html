@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel='icon' href='photos/icon.png' type='image/x-icon'/ >
     <title>Sani - Portfolio</title>
     <!-- Custom CSS Link -->
     <link rel="stylesheet" href="styles.css" />
@@ -11,63 +12,48 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light navbar-slide-in">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="photos/logo.png" alt="Sani" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active-link" aria-current="page" href="#home"
-                  >Home</a
-                >
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#projects-research"
-                  >Projects & Research</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#extra-curricular"
-                  >Extra-Curricular Activity</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+    <!-- Font Awesome CSS Link -->
+     <body>
+    <div class="all">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-slide-in">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="photos/logo.png" alt="Sani">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active-link" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects-research">Projects & Research</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-
+        </nav>
+      </header>
+      <div class="mycontent" data-bs-spy="scroll" data-bs-target=".navbar-nav" data-bs-offset="100">
     <section id="home">
       <div class="container">
         <div class="row d-flex justify-content-evenly">
@@ -96,7 +82,7 @@
       </div>
     </section>
     <!-- Your content for the "Home" section goes here -->
-    <section id="about">
+    <section id="about" class="animate-element">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -150,7 +136,7 @@
         </div>
       </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="animate-element">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -213,9 +199,71 @@
           </div>
       </div>
     </section>
-    <section id="services">
+    <section id="experience" class="animate-element">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="experience-item">
+              <h3>Student Research Assistant</h3>
+              <p class="company">Independent University, Bangladesh</p>
+              <p class="duration">Jan 2023 - Present</p>
+              <p class="description">
+                Collaborated with professors on research projects related to
+                computer vision and machine learning. Assisted in data
+                collection, analysis, and model implementation.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="experience-item">
+              <h3>Freelance Web Designer & Developer</h3>
+              <p class="company">Various Clients</p>
+              <p class="duration">May 2022 - Present</p>
+              <p class="description">
+                Works as a freelance web designer and developer for multiple
+                clients. Designed and developed responsive websites using HTML,
+                CSS, JavaScript, React, Node.js, and MySQL.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="experience-item">
+              <h3>Tutor</h3>
+              <p class="company">Self-Employed</p>
+              <p class="duration">Sep 2020 - Present</p>
+              <p class="description">
+                Offered private tutoring services to high school students in
+                subjects like Mathematics, Physics, and ICT. Helped
+                students improve their understanding and performance in their
+                academics.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="experience-item">
+              <h3>Photo Editing & Logo Design</h3>
+              <p class="company">Freelance Projects</p>
+              <p class="duration">Jan 2020 - Dec 2021</p>
+              <p class="description">
+                Provided photo editing and logo design services for clients from
+                various industries. Utilized Adobe Photoshop and Illustrator to
+                create visually appealing and professional designs that met
+                clients' requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="services" class="animate-element">
       <div class="container">
         <h2 class="text-center">Services</h2>
+        <hr />
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
@@ -265,9 +313,10 @@
       </div>
     </section>
 
-    <section id="projects-research">
+    <section id="projects-research" class="animate-element">
       <div class="container">
         <h2 class="text-center">Projects & Research</h2>
+        <hr />
         <div class="row">
           <div class="col-md-4">
             <div class="card">
@@ -277,7 +326,7 @@
                 <p class="card-text">A web-based application for monitoring and managing student performance. Built using React, Node.js, and MySQL.</p>
               </div>
               <div class="card-footer">
-                <a href="#" target="_blank">GitHub Link</a>
+                <a href="#https://github.com/Sani1189/Student-Perofrmance-Monitoring-System" target="_blank">GitHub Link</a>
               </div>
             </div>
           </div>
@@ -289,7 +338,7 @@
                 <p class="card-text">A simple and intuitive to-do list application with features like adding tasks, marking completed tasks, and more. Developed using React and Firebase.</p>
               </div>
               <div class="card-footer">
-                <a href="#" target="_blank">GitHub Link</a>
+                <a href="#https://github.com/Sani1189/TODOapp" target="_blank">GitHub Link</a>
               </div>
             </div>
           </div>
@@ -301,7 +350,7 @@
                 <p class="card-text">An e-commerce website with a basic shopping cart functionality. Developed using React, Node.js, and MongoDB.</p>
               </div>
               <div class="card-footer">
-                <a href="#" target="_blank">GitHub Link</a>
+                <a href="#https://github.com/Sani1189/simple-shopping-page" target="_blank">GitHub Link</a>
               </div>
             </div>
           </div>
@@ -309,9 +358,10 @@
     </section>
     
 
-    <section id="extra-curricular">
+    <section id="extra-curricular" class="animate-element">
       <div class="container">
         <h2 class="text-center">Extra-Curricular Activities</h2>
+        <hr />
         <ul class="activities-list">
           <li>
             <strong>Debating Society:</strong> Participated in inter-school debates and won awards for public speaking and critical thinking.
@@ -323,93 +373,197 @@
             <strong>Sports:</strong> Played cricket and represented the school team in regional tournaments.
           </li>
           <li>
-            <strong>Music:</strong> Played many esports tournaments and won awards.
+            <strong>Gaming:</strong> Played many esports tournaments and won awards.
         </ul>
       </div>
     </section>
-    
-    <section id="contact">
+    <section id="hobbies" class="animate-element">
       <div class="container">
-        <h2 class="text-center">Contact Me</h2>
-        <div class="contact-form">
-          <form>
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
+        <h2 class="section-title">Hobbies</h2>
+        <hr />
+        <div class="row">
+          <div class="col-md-6">
+            <div class="hobby-item">
+              <i class="fas fa-music" style="color: #3756d5;"></i>
+                            <h3>Listening to Music</h3>
+              <p>
+                I enjoy listening to various genres of music, especially while
+                working or relaxing. Music helps me stay focused and enhances my
+                creativity.
+              </p>
             </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="col-md-6">
+            <div class="hobby-item">
+              <i class="fas fa-camera" style="color: #49b3af;"></i>             <h3>Photography</h3>
+              <p>
+                Photography is one of my passions. I love capturing beautiful
+                moments and scenes, especially during my travels and outdoor
+                activities.
+              </p>
             </div>
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="hobby-item">
+              <i class="fas fa-film" style="color: #74a2ca;"></i>
+              <h3>Watching Movies</h3>
+              <p>
+                Watching movies is one of my favorite pastimes. I enjoy films
+                from various genres, and it allows me to unwind and be
+                entertained.
+              </p>
             </div>
-            <button type="submit">Send Message</button>
-          </form>
+          </div>
+          <div class="col-md-6">
+            <div class="hobby-item">
+              <i class="fas fa-gamepad" style="color: rgb(243, 85, 85);"></i>
+              <h3>Gaming</h3>
+              <p>
+                Gaming is another hobby that I indulge in during my free time.
+                Playing video games helps me relax and challenge my strategic
+                thinking.
+              </p>
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="hobby-item">
+            <i class="fas fa-book" style="color: #1c4d57;"></i>
+            <h3>Reading Books</h3>
+            <p>
+              Reading books is one of my favorite hobbies. I enjoy reading
+              books from various genres, especially fiction and self-help.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="hobby-item">
+            <i class="fas fa-globe" style="color: #299045;"></i>
+            <h3>Travelling</h3>
+            <p>
+              Travelling is one of my passions. I love exploring new places and
+              experiencing different cultures. It helps me broaden my
+              perspective and learn new things.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>    
+    
+    <section id="contact" class="animate-element">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <hr />
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-form">
+              
+              <form>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 contact-info d-flex justify-content-center">
+            <div class="contact-details">
+              <div class="contact-item">
+                <a href="mailto:saniulislam58@gmail.com">
+                  <i class="fas fa-envelope" style="color:red;"></i> <span class="click">saniulislam58@gmail.com</span>
+                                </a>
+              </div>
+              <div class="contact-item">
+                <a href="tel:+8801835025522">
+                  <i class="fas fa-phone" style="color:blue;"></i><span class="click"> +8801835025522</span>
+                </a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i> <span>7i, Abdur Sadek Road, Bashundhara R/A, Dhaka</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+</div>
+    
+    
     <footer class="footer mt-auto py-3 bg-black">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h6 class="text-white mb-0">Links</h6>
+        <div class="row ">
+          <div class="col-6">
+            <h6 class="text-white mb-3">Links</h6>
             <ul class="list-unstyled mb-0">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#home" class="text-white text-decoration-none"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="#projects-research" class="text-white text-decoration-none"><i class="fas fa-project-diagram"></i> Projects</a></li>
+              <li><a href="#contact" class="text-white text-decoration-none"><i class="fas fa-envelope"></i> Contact</a></li>
+              <li><a href="#about" class="text-white text-decoration-none"><i class="fas fa-user"></i> About</a></li>
             </ul>
           </div>
-          <div class="col-md-6">
-            <h6 class="text-white mb-0">Social Media</h6>
+          <div class="col-6">
+            <h6 class="text-white mb-3">Social Media</h6>
             <ul class="list-unstyled mb-0">
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/in/saniul-islam-sani/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="https://twitter.com/ahammed_sani" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li><a href="https://www.facebook.com/saniul52/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li>
+                <a href="https://github.com/Sani1189" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </li>
             </ul>
           </div>
         </div>
-        <div class="d-flex justify-content-between py-3 border-top">
+        <br/>
+        <div class="d-flex justify-content-between py-1 border-top">
           <p class="text-white mb-0">Copyright &copy; 2023 Sani</p>
-          <a href="#">Back to top</a>
+          <a href="#" class="text-white text-decoration-none"><i class="fas fa-arrow-up"></i> Back to top</a>
         </div>
       </div>
     </footer>
     
+    </div>
+
     
+    <script src="https://kit.fontawesome.com/b79b9433c9.js" crossorigin="anonymous"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script>
       $(document).ready(function () {
-        $(".navbar-toggler").click(function () {
-          $(".navbar-toggler").toggleClass("change");
+        $(".navbar-nav li a").click(function (event) {
+          $(".navbar-collapse").collapse("hide");
         });
       });
     </script>
-    <script>
-      $(window).scroll(function () {
-        let position = $(this).scrollTop();
-        if (position >= 200) {
-          $(".navbar-slide-in").addClass("navbar-background");
-        } else {
-          $(".navbar-slide-in").removeClass("navbar-background");
+<script>
+  $(document).ready(function() {
+    $(window).scroll(function() {
+      $(".animate-element").each(function() {
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        
+        if (scroll > position - windowHeight + 200) {
+          $(this).addClass("visible");
         }
       });
-    </script>
-    <script>
-      $(window).scroll(function () {
-        let position = $(this).scrollTop();
-        if (position >= 650) {
-          $(".profile-photo").addClass("fromLeft");
-          $(".mytxt").addClass("fromRight");
-        } else {
-          $(".profile-photo").removeClass("fromLeft");
-          $(".mytxt").removeClass("fromRight");
-        }
-      });
-    </script>
+    });
+  });
+</script>
   </body>
 </html>
