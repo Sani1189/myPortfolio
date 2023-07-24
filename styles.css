@@ -317,6 +317,23 @@ a.nav-link{
   #about h2 {
     font-size: 30px;
   }
+  .text-transition.mytxt p {
+  animation: pAnimation 1.5s linear 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes pAnimation {
+  0% {
+    width: 100%;
+    opacity: 0;
+    transform: translateZ(50px);
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
   #about .details{
     text-align: center;
   }
